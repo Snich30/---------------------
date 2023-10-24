@@ -8,7 +8,7 @@ var images = document.querySelectorAll(".gelery .img");
 
 images.forEach(function(image) {
   image.addEventListener("click", function() {
-    var bg = image.style.getPropertyValue("bg");
+    var bg = image.style.getPropertyValue("--bg");
     var avatar = image.querySelector(".avatar").src;
     var authorName = image.querySelector(".author-name").textContent;
   
